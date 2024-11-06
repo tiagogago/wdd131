@@ -5,60 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loop Activities</title>
+    <script src="script/app.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <html>
-
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .header i {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .today {
-            margin: 20px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-
-        .future-days {
-            text-align: left;
-        }
-
-        .future-days h2 {
-            font-size: 20px;
-        }
-
-        .future-days ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
-</head>
 
 <body>
     <div class="container">
@@ -74,26 +25,6 @@
             </ul>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            const today = new Date();
-            const todayIndex = today.getDay();
-            const todayName = daysOfWeek[todayIndex];
-
-            document.getElementById("today").innerText = `Today is ${todayName}.`;
-
-            const futureDaysList = document.getElementById("future-days-list");
-            for (let i = 1; i <= 6; i++) {
-                const futureDayIndex = (todayIndex + i) % 7;
-                const futureDayName = daysOfWeek[futureDayIndex];
-                const listItem = document.createElement("li");
-                listItem.innerText = futureDayName;
-                futureDaysList.appendChild(listItem);
-            }
-        });
-    </script>
 </body>
 
 </html>
