@@ -1,0 +1,46 @@
+/* body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.today {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.future-days {
+  text-align: left;
+}
+
+.future-days h2 {
+  font-size: 20px;
+}
+
+.future-days ul {
+  list-style-type: disc;
+  padding-left: 20px;
+} */
