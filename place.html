@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praga - A Look at the City</title>
+    <meta name="description"
+        content="Information about the state of Texas including its area, population, and current weather.">
+    <meta name="author" content="Tiago Gago">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-larger.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Praga - A Look at the City</h1>
+    </header>
+
+    <main>
+        <section class="image-section">
+            <h2 class="visually-hidden">Praga Scenic View</h2> <!-- Accessible heading for screen readers -->
+            <picture>
+                <source srcset="./images/praga-2.webp" media="(min-width: 700px)">
+                <source srcset="./images/praga-1.webp" media="(min-width: 500px)">
+                <img src="images/texas-two.webp" alt="Scenic view of Texas landscape" width="500" height="250">
+            </picture>
+        </section>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 496 km²</li>
+                <li><strong>Population:</strong> 1 237 893 inhabitants</li>
+                <li><strong>Capital:</strong> Praga</li>
+                <li><strong>Languages:</strong> Tcheco</li>
+                <li><strong>Currency:</strong> EURO (€)</li>
+                <li><strong>Time Zone:</strong> UTC -1</li>
+                <li><strong>Calling Code:</strong> +420</li>
+                <li><strong>Internet TLD:</strong> .cz</li>
+            </ul>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather <img src="./images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather icon"
+                    class="weather-icon"></h2>
+            <ul>
+                <li><strong>Temperature:</strong> 1°C</li>
+                <li><strong>Conditions:</strong> Fog</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span>Tiago Gago</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
