@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of temple images from various locations.">
+    <meta name="author" content="Tiago Gago">
+    <title>Filtered Temple Album</title>
+    <link rel="stylesheet" href="./styles/filtered-temples.css">
+    <link rel="stylesheet" href="./styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./script/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <button id="menu-toggle">☰</button>
+        <nav>
+            <a href="#" data-filter="all">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section id="temple-gallery">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Tiago Gago | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
