@@ -1,0 +1,185 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header .date {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.search {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  margin-left: 10px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #2a2a3b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  margin-right: 20px;
+  min-width: 280px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card .profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card .profile .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card .profile .role {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .status .tasks {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card .status .amount {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card .status .amount.positive {
+  color: #00ff00;
+}
+
+.card .status .amount.negative {
+  color: #ff0000;
+}
+
+.card .status .amount.neutral {
+  color: #00ffff;
+}
+
+.chart {
+  height: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 2;
+}
+
+.chart canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.segmentation,
+.satisfaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.segmentation .details {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.segmentation .details:hover {
+  background-color: #555;
+}
+
+.satisfaction .percentage {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.top-countries ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-countries li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.top-countries li i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-right: 0;
+  }
+
+  .chart {
+    height: 300px;
+  }
+}

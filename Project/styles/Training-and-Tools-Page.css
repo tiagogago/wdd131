@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Section Styles */
+section {
+  margin: 20px 0;
+}
+
+h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Training Section */
+.training-list {
+  list-style: none;
+  padding: 0;
+}
+
+.training-list li {
+  margin: 10px 0;
+}
+
+.training-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.training-list a:hover {
+  text-decoration: underline;
+}
+
+/* Tools Section */
+.tool-cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tool-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(33.33% - 10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tool-card h3 {
+  margin-top: 0;
+}
+
+.tool-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tool-card button:hover {
+  background: #0056b3;
+}
+
+/* FAQ Section */
+.faq {
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.faq h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.faq-content {
+  display: none;
+  padding: 10px 0;
+}
+
+/* Updates Section */
+.updates-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.updates-section li {
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .tool-cards {
+    flex-direction: column;
+  }
+
+  .tool-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 15px 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .tool-card {
+    padding: 10px;
+  }
+
+  .tool-card button {
+    padding: 8px 15px;
+  }
+
+  .faq h3 {
+    font-size: 16px;
+  }
+}
