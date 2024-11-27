@@ -4,78 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training and Tools</title>
+    <title>Training and Tools Page - Sales Force</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/Training-and-Tools-Page.css">
+    <script src="./script/Training-and-Tools-Page.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
 </head>
 
 <body>
-    <header class="header">
-        <h1>Training and Tools</h1>
-        <p>Your hub for sales improvement and resources!</p>
-    </header>
-
-    <main>
-        <!-- Section for Training Resources -->
-        <section class="training-section">
-            <h2>Training Resources</h2>
-            <ul class="training-list">
-                <li><a href="https://www.example.com/sales-course" target="_blank" rel="noopener">Sales Course for
-                        Beginners</a></li>
-                <li><a href="https://www.example.com/articles" target="_blank" rel="noopener">Top 10 Sales Articles</a>
-                </li>
-                <li><a href="https://www.example.com/videos" target="_blank" rel="noopener">Motivational Sales
-                        Videos</a></li>
-            </ul>
-        </section>
-
-        <!-- Section for Tools -->
-        <section class="tools-section">
-            <h2>Useful Tools</h2>
-            <div class="tool-cards">
-                <div class="tool-card">
-                    <h3>CRM Tool</h3>
-                    <p>Manage your customer relationships efficiently.</p>
-                    <button onclick="openTool('CRM Tool')">Open</button>
-                </div>
-                <div class="tool-card">
-                    <h3>Sales Presentations</h3>
-                    <p>Access templates for professional sales pitches.</p>
-                    <button onclick="openTool('Sales Presentations')">Open</button>
-                </div>
-                <div class="tool-card">
-                    <h3>Sales Scripts</h3>
-                    <p>Download scripts to improve your conversions.</p>
-                    <button onclick="openTool('Sales Scripts')">Open</button>
+    <html>
+    <div class="header">
+        <div>
+            <div class="logo">
+                <img alt="Logo" src="images/logo-sales-force-removebg-preview.png" width="200" height="90">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-        </section>
+            <nav class="nav">
+                <a href="./Home-Page.html">Home Page</a>
+                <a href="./Training-and-Tools-Page.html">Training and Tools Page</a>
+                <a href="./Results-and-Recognition-Page.html">Results and Recognition Page</a>
+                <button type="button">Contact Us</button>
+            </nav>
+        </div>
+        <h1>
+            Sales Force
+        </h1>
+        <img src="./images/2.jpg" alt="image2">
+        <button type="button">
+            About Us
+        </button>
+    </div>
 
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq">
-                <h3>What are the best sales techniques? <span class="toggle-faq">+</span></h3>
-                <p class="faq-content">Focus on understanding your client's needs, building relationships, and providing
-                    solutions.</p>
+    <div class="steps">
+        <div class="title">
+            <h2>
+                Just 4 easy steps
+            </h2>
+            <p>We believe in providing you
+            </p>
+            <p> solutions through a short
+                and precise process. </p>
+            <p> You are the decision maker. We
+                handle all of the rest.</p>
+        </div>
+        <div class="itens">
+            <div class="grid-container">
+                <div class="step item1">
+                    <div>
+                        <h1>
+                            01.
+                        </h1>
+                        <h3>
+                            MEET WITH US
+                        </h3>
+                        <p>
+                            In this comprehensive "needs assessment," our goal is to deeply understand your
+                            requirements, business objectives, and talent needs. Additionally, we will unveil our
+                            meticulous
+                            "behind-the-scenes process" designed to pinpoint the perfect candidate tailored specifically
+                            to fulfill your needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="step item2 right">
+                    <div>
+                        <h1>
+                            02.
+                        </h1>
+                        <h3>
+                            DEFINE THE POSITION
+                        </h3>
+                        <p>
+                            Upon signing the agreement, we will commence crafting a detailed position description that
+                            accurately reflects your requirements. You'll gain insight into the effectiveness of our
+                            recruitment
+                            process and designate a job supervisor within your organization to serve as the primary
+                            liaison
+                            between ZIVA, yourself, and the employee throughout this process.
+                        </p>
+                    </div>
+                </div>
+                <img src="./images/steps.png" alt="" class="item3">
+                <div class="step item4">
+                    <div>
+                        <h1>
+                            03.
+                        </h1>
+                        <h3>
+                            LIST OF CANDIDATES
+                        </h3>
+                        <p>
+                            Following a thorough recruiting process, you will be presented with a shortlist comprising
+                            the
+                            top
+                            candidates for the requested position. Armed with their CVs and portfolios, you will have
+                            the
+                            opportunity to personally handpick those you wish to interview and advance in the selection
+                            process.
+                            To facilitate your decision-making, we will coordinate and schedule final interviews with
+                            the
+                            chosen
+                            candidates.
+                        </p>
+                    </div>
+                </div>
+                <div class="step item5 right">
+                    <div>
+                        <h1>
+                            04.
+                        </h1>
+                        <h3>
+                            FINAL ASSESSMENTS
+                        </h3>
+                        <p>
+                            In a meeting with the hiring manager of your company, our team conducts a comprehensive
+                            evaluation
+                            of the final candidates. Our objective is to ensure each candidate's suitability, alignment
+                            with
+                            the
+                            role and organizational culture, and overall fit for the position. The selected candidate
+                            will
+                            be
+                            presented with a job offer.
+                        </p>
+                    </div>
+                </div>
+                <div class="step item6">
+                    <div>
+                        <h1>
+                            05.
+                        </h1>
+                        <h3>
+                            ON-BOARDING AND TRAINING
+                        </h3>
+                        <p>
+                            Now it is time for your company to on-board and train the new employee. Prior to this, ZIVA
+                            will
+                            have already conducted a training session with them, outlining their individualized learning
+                            and
+                            development program, and introducing the integrated reporting system for monitoring and
+                            analyzing
+                            employee performance.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="faq">
-                <h3>How do I learn about our products? <span class="toggle-faq">+</span></h3>
-                <p class="faq-content">Check the training materials or attend our next product workshop.</p>
-            </div>
-        </section>
-
-        <!-- Updates Section -->
-        <section class="updates-section">
-            <h2>Upcoming Events and Training</h2>
-            <ul>
-                <li><strong>Sales Bootcamp:</strong> December 5th, 2024</li>
-                <li><strong>Quarterly Team Meeting:</strong> January 12th, 2025</li>
-                <li><strong>Product Showcase:</strong> February 20th, 2025</li>
-            </ul>
-        </section>
-    </main>
-
-    <script src="./script/Training-andTools-Page.js" defer></script>
+        </div>
+        <div class="button-container">
+            <button>
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="image-section">
+        <div>
+            <p>
+                Smart workers, global companies.
+            </p>
+        </div>
+        <img alt="Global Companies" height="100" src="./images/DSC08702.jpg" width="100" />
+    </div>
+    <div class="achievements">
+        <h2>
+            Our Achievements
+        </h2>
+        <div class="achievement-item">
+            <h3>
+                +500
+            </h3>
+            <p>
+                Sales
+            </p>
+        </div>
+        <div class="achievement-item">
+            <h3>
+                +500
+            </h3>
+            <p>
+                Sales
+            </p>
+        </div>
+        <div class="achievement-item">
+            <h3>
+                +500
+            </h3>
+            <p>
+                Sales
+            </p>
+        </div>
+    </div>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>What are the best sales techniques? <span class="faq-question">+</span></h3>
+            <p class="faq-content">Focus on understanding your client's needs, building relationships, and providing
+                solutions.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I learn about our products? <span class="faq-question">+</span></h3>
+            <p class="faq-content">Check the training materials or attend our next product workshop.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I learn about our products? <span class="faq-question">+</span></h3>
+            <p class="faq-content">Check the training materials or attend our next product workshop.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I learn about our products? <span class="faq-question">+</span></h3>
+            <p class="faq-content">Check the training materials or attend our next product workshop.</p>
+        </div>
+    </section>
+    <div class="footer">
+        <img alt="Footer Logo" height="50" src="./images/logo-sales-force-removebg-preview.png" width="50" />
+        <p></p>
+        <nav>
+            <a href="./Home-Page.html Page">
+                Home Page
+            </a>
+            <a href="./Training-and-Tools-Page.html">
+                Training and Tools Page
+            </a>
+            <a href="./Results-and-Recognition-Page.html">
+                Results and Recognition Page
+            </a>
+        </nav>
+        <p></p>
+        <div class="social-icons">
+            <a href="#" title="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>

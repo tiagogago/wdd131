@@ -1,0 +1,98 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            color: orange;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .navbar .logo span {
+            color: white;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .navbar .menu-icon {
+            color: white;
+            font-size: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+            display: none; /* Hide by default */
+        }
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .navbar .contact-button {
+            background-color: white;
+            color: black;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        @media (max-width: 790px) {
+            .navbar .menu-icon {
+                display: block; /* Show when screen width is 790px or less */
+            }
+            .navbar .nav-links {
+                display: none; /* Hide navigation links */
+                flex-direction: column;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding: 10px 0;
+            }
+            .navbar .nav-links a {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Sales <span>force</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="nav-links">
+            <a href="#">Home Page</a>
+            <a href="#">Training and Tools Page</a>
+            <a href="#">Results and Recognition Page</a>
+            <a href="#" class="contact-button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,101 +1,179 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+.item1 {
+  grid-area: paragrafo1;
+}
+.item2 {
+  grid-area: paragrafo2;
+}
+.item3 {
+  grid-area: imagem;
+}
+.item4 {
+  grid-area: paragrafo3;
+}
+.item5 {
+  grid-area: paragrafo4;
+}
+.item6 {
+  grid-area: paragrafo5;
 }
 
-.header {
-  background: #007bff;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "paragrafo1 imagem imagem imagem ."
+    "paragrafo1 imagem imagem imagem paragrafo2"
+    ". imagem imagem imagem paragrafo2"
+    "paragrafo3 imagem imagem imagem ."
+    "paragrafo3 imagem imagem imagem paragrafo4"
+    ". imagem imagem imagem paragrafo4"
+    "paragrafo5 imagem imagem imagem ."
+    "paragrafo5 imagem imagem imagem .";
+  gap: 5px;
+  padding: 5px;
+  margin: 0 auto;
 }
-
-header h1 {
-  margin: 0;
-}
-
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-/* Section Styles */
-section {
-  margin: 20px 0;
-}
-
-h2 {
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 5px;
-}
-
-/* Training Section */
-.training-list {
-  list-style: none;
-  padding: 0;
-}
-
-.training-list li {
-  margin: 10px 0;
-}
-
-.training-list a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.training-list a:hover {
-  text-decoration: underline;
-}
-
-/* Tools Section */
-.tool-cards {
+.title {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.title p {
+  margin: 0;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.item3 {
+  grid-area: imagem;
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  object-fit: fill;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+  height: 100px;
+}
+.steps {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #fff;
 }
 
-.tool-card {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
-  width: calc(33.33% - 10px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.steps h2 {
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: space-evenly;
+}
+
+.step img {
+  width: 100px;
+  height: 100px;
+}
+
+.step p {
   text-align: center;
 }
 
-.tool-card h3 {
-  margin-top: 0;
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.tool-card button {
-  margin-top: 10px;
+.button-container button {
   padding: 10px 20px;
-  background: #007bff;
-  color: white;
+  background-color: #000;
+  color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-.tool-card button:hover {
-  background: #0056b3;
+.image-section {
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
 }
 
-/* FAQ Section */
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-section p {
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: -200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 2rem;
+}
+.image-section div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.achievements {
+  background-color: #ff7f32;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  color: white;
+}
+
+.achievements h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 0 10px;
+}
+
+.achievements .achievement-item {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 1%;
+  font-size: 24px;
+}
+
 .faq {
   margin: 10px 0;
   padding: 10px;
   background: white;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
 }
 
 .faq h3 {
@@ -104,61 +182,55 @@ h2 {
   align-items: center;
   margin: 0;
   cursor: pointer;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .faq-content {
   display: none;
   padding: 10px 0;
+  font-size: 16px;
 }
 
-/* Updates Section */
-.updates-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.updates-section li {
-  margin: 10px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  main {
-    padding: 10px;
-    margin: 10px auto;
-  }
-
-  .tool-cards {
-    flex-direction: column;
-  }
-
-  .tool-card {
-    width: 100%;
+@media screen and (max-width: 680px) {
+  .image-section p {
+    margin-bottom: -100px;
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
+@media screen and (max-width: 790px) {
+  .item3 {
+    display: none;
   }
-
-  .header {
-    padding: 15px 10px;
+  .grid-container {
+    display: block;
   }
+}
 
-  h2 {
-    font-size: 18px;
+@media screen and (max-width: 555px) {
+  .image-section p {
+    font-size: 1rem;
   }
-
-  .tool-card {
-    padding: 10px;
+}
+@media screen and (max-width: 1050px) {
+  .grid-container > div {
+    height: 150px;
   }
-
-  .tool-card button {
-    padding: 8px 15px;
+}
+@media screen and (max-width: 970px) {
+  .grid-container > div {
+    height: 180px;
   }
-
-  .faq h3 {
-    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .faq-section {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faq-section {
+    max-width: 400px;
   }
 }

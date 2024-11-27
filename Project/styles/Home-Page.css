@@ -1,0 +1,215 @@
+.main-image {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main-image img {
+  width: 150px;
+  height: 150px;
+}
+
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  width: 150px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: auto;
+}
+
+.team-member p {
+  margin: 10px 0 0;
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.achievement {
+  width: 200px;
+  text-align: center;
+}
+
+.achievement img {
+  width: 100%;
+  height: 100px;
+}
+
+.achievement p {
+  margin: 10px 0 0;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  border: 2px solid #000;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #777;
+}
+
+.cheers {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cheers-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cheers-row {
+  display: flex;
+  gap: 20px;
+}
+
+.cheer {
+  width: 150px;
+  text-align: center;
+}
+
+.cheer img {
+  width: 150px;
+  height: 150px;
+}
+
+.cheer p {
+  margin: 10px 0 0;
+}
+
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #000;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-content {
+  width: 50%;
+}
+
+.contact-content p {
+  font-size: 16px;
+  color: #777;
+}
+
+.contact img {
+  width: 50%;
+  height: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.faq-content {
+  display: none; /* Inicialmente escondido */
+  opacity: 0; /* Totalmente transparente */
+  transition: opacity 0.5s; /* Transição suave de opacidade */
+}
+
+.faq-content.visible {
+  display: block; /* Torna o elemento visível */
+  opacity: 1; /* Totalmente visível */
+}
+
+@media screen and (max-width: 680px) {
+  .image-section p {
+    margin-bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .item3 {
+    display: none;
+  }
+  .grid-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 555px) {
+  .image-section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .grid-container > div {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .grid-container > div {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-section {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faq-section {
+    max-width: 400px;
+  }
+}
