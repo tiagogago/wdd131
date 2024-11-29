@@ -1,3 +1,46 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 500px;
+}
+.hero-text h1 {
+  font-size: 3em;
+  color: white;
+}
+.hero-text h2 {
+  font-size: 2em;
+  color: #ff7f32;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+.hero-text button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+.image1 img {
+  width: 100%;
+  height: auto;
+  margin-top: -5px;
+}
+
 .main-image {
   text-align: center;
   padding: 50px 0;
@@ -13,7 +56,7 @@
   text-align: center;
 }
 
-.section h2 {
+.section h1 {
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -59,24 +102,41 @@
 .achievement p {
   margin: 10px 0 0;
 }
+.achievement button {
+  margin: 10px 0 0;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
 
 .about {
-  padding: 50px 0;
+  padding: 40px 0;
   text-align: center;
   border: 2px solid #000;
   width: 60%;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .about p {
   font-size: 16px;
-  color: #777;
+  color: black;
 }
-
+.hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .cheers {
-  padding: 50px 0;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
 }
 
 .cheers-grid {
@@ -88,26 +148,61 @@
 
 .cheers-row {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .cheer {
-  width: 150px;
+  flex: 1 1 30%;
+  margin: 10px;
+  min-width: 200px;
   text-align: center;
 }
 
 .cheer img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
+  border-radius: 500px;
 }
 
 .cheer p {
   margin: 10px 0 0;
+  text-align: center;
+  padding: 10px;
 }
 
 .contact {
   padding: 50px 0;
   text-align: center;
+}
+.contact-info,
+.contact-form {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info div {
+  width: 45%;
+  padding: 20px;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+.contact-info i {
+  margin-right: 10px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-grid {
@@ -153,25 +248,25 @@
 }
 
 .contact-form button {
-  background-color: #007bff;
+  background-color: black;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 
 .faq-content {
-  display: none; /* Inicialmente escondido */
-  opacity: 0; /* Totalmente transparente */
-  transition: opacity 0.5s; /* Transição suave de opacidade */
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .faq-content.visible {
-  display: block; /* Torna o elemento visível */
-  opacity: 1; /* Totalmente visível */
+  display: block;
+  opacity: 1;
 }
 
 @media screen and (max-width: 680px) {
@@ -183,9 +278,13 @@
 @media screen and (max-width: 790px) {
   .item3 {
     display: none;
+    box-sizing: border-box;
   }
   .grid-container {
     display: block;
+  }
+  .contact-info div {
+    width: auto;
   }
 }
 @media screen and (max-width: 555px) {
@@ -202,14 +301,28 @@
   .grid-container > div {
     height: 180px;
   }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .faq-section {
     max-width: 600px;
   }
+  .cheer {
+    flex: 1 1 45%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .faq-section {
     max-width: 400px;
+  }
+  .cheer {
+    flex: 1 1 100%;
   }
 }
