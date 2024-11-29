@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: blue;
+}
+
+p::first-line {
+  color: black;
+}
+
+p::selection {
+  background: yellow;
+  color: black;
+}
+
+.before-after p::before {
+  content: "📍";
+  margin-right: 5px;
+}
+
+.before-after p::after {
+  content: "🌤️";
+  margin-left: 5px;
+}
+
+.before-after label::before {
+  content: "📍";
+  margin-right: 5px;
+}
+
+.steps ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.steps li {
+  margin: 5px 0;
+}
+
+.steps li::before {
+  content: counter(step-counter) ". ";
+  counter-increment: step-counter;
+  font-weight: bold;
+  color: blue;
+  font-size: 1.5em;
+}
+
+.steps input[type="checkbox"] {
+  margin-right: 5px;
+}

@@ -1,0 +1,294 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results and Recognition Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/Results-and-Recognition-Page.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <script src="./script/Results-and-Recognition-Page.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <div class="logo">
+                <img alt="Logo" src="images/logo-sales-force-removebg-preview.png" width="200" height="90">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="./Home-Page.html"><strong>Home Page</strong></a>
+                <a href="./Training-and-Tools-Page.html"><strong>Training and Tools Page</strong></a>
+                <a href="./Results-and-Recognition-Page.html"><strong>Results and Recognition Page</strong></a>
+                <button type="button"><strong>Contact Us</strong></button>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cards-container">
+            <div class="card">
+                <div class="profile">
+                    <img alt="Anabelle" height="50" src="./images/anabela-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Anabelle
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager USA
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        3 from 5 tasks completed
+                    </div>
+                    <div class="amount positive">
+                        3490.00 €
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img alt="Caleb" height="50" src="./images/caleb-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Caleb
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager Argentina
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        1 from 5 tasks completed
+                    </div>
+                    <div class="amount negative">
+                        590.00 €
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img alt="Caroline" height="50" src="./images/caroline-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Caroline
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager USA
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        2 from 5 tasks completed
+                    </div>
+                    <div class="amount neutral">
+                        2600.00 €
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img alt="Lucas" height="50" src="./images/lucas-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Lucas
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager Brasil
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        3 from 5 tasks completed
+                    </div>
+                    <div class="amount positive">
+                        3490.00 €
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img alt="Marsha" height="50" src="./images/marcha-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Masha
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager Ukraine
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        3 from 5 tasks completed
+                    </div>
+                    <div class="amount positive">
+                        3490.00 €
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img alt="Rafael" height="50" src="./images/rafael-sales.png" width="50" />
+                    <div>
+                        <div class="name">
+                            Rafael
+                            <i class="fas fa-check-circle">
+                            </i>
+                        </div>
+                        <div class="role">
+                            Sale's manager Brasil
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="tasks">
+                        3 from 5 tasks completed
+                    </div>
+                    <div class="amount positive">
+                        3490.00 €
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card chart">
+                <h2>
+                    Your Work Summary
+                </h2>
+                <canvas id="workSummaryChart"
+                    style="display: flex; box-sizing: border-box; height: 350px; width: 700px; color: #ff7f32;"
+                    width="875" height="350">
+                </canvas>
+            </div>
+            <div class="card top-countries">
+                <h2>
+                    Top Countries
+                </h2>
+                <ul>
+                    <li>
+                        <div>
+                            <span class="flag-icon flag-icon-us flag-icon-squared"></span>
+                            USA
+                        </div>
+                        <span>
+                            21,942.83 €
+                        </span>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="flag-icon flag-icon-br flag-icon-squared"></span>
+                            BRASIL
+                        </div>
+                        <span>
+                            19,710.00 €
+                        </span>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="flag-icon flag-icon-ua flag-icon-squared"></span>
+                            UKRAINE
+                        </div>
+                        <span>
+                            12,320.30 €
+                        </span>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="flag-icon flag-icon-ar flag-icon-squared"></span>
+                            ARGENTINA
+                        </div>
+                        <span>
+                            9,725.00 €
+                        </span>
+                    </li>
+                </ul>
+                <div class="container-total-preco">
+                    <div class="Total">
+                        Total:
+                    </div>
+                    <div class="preco">
+                        63,698.13 €
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card segmentation" style="height: 300px;">
+                <h2>
+                    Segmentation
+                </h2>
+                <div class="pieContainer">
+                    <div class="pieBackground"></div>
+                    <div id="pieSlice1" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card satisfaction" style="height: 300px;">
+                <h2>
+                    Satisfaction
+                </h2>
+                <div class="percentage">
+                    97.78%
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img alt="Footer Logo" height="50" src="./images/logo-sales-force-removebg-preview.png" width="50" />
+        <p></p>
+        <nav>
+            <a href="./Home-Page.html Page">
+                <strong>Home Page</strong>
+            </a>
+            <a href="./Training-and-Tools-Page.html">
+                <strong>Training and Tools Page</strong>
+            </a>
+            <a href="./Results-and-Recognition-Page.html">
+                <strong>Results and Recognition Page</strong>
+            </a>
+        </nav>
+        <p></p>
+        <div class="social-icons">
+            <a href="#" title="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@media screen and (min-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  header{
+    background-color: black;
+    color: white;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,249 @@
+.item1 {
+  grid-area: paragrafo1;
+}
+.item2 {
+  grid-area: paragrafo2;
+}
+.item3 {
+  grid-area: imagem;
+}
+.item4 {
+  grid-area: paragrafo3;
+}
+.item5 {
+  grid-area: paragrafo4;
+}
+.item6 {
+  grid-area: paragrafo5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "paragrafo1 imagem imagem imagem ."
+    "paragrafo1 imagem imagem imagem paragrafo2"
+    ". imagem imagem imagem paragrafo2"
+    "paragrafo3 imagem imagem imagem ."
+    "paragrafo3 imagem imagem imagem paragrafo4"
+    ". imagem imagem imagem paragrafo4"
+    "paragrafo5 imagem imagem imagem ."
+    "paragrafo5 imagem imagem imagem .";
+  gap: 5px;
+  padding: 5px;
+  margin: 0 auto;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.title p {
+  margin: 0;
+  text-align: right;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.item3 {
+  grid-area: imagem;
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  object-fit: fill;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+}
+.steps {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #fff;
+}
+
+.steps h2 {
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: space-evenly;
+}
+
+.step img {
+  width: 100px;
+  height: 100px;
+}
+
+.step p {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.image-section {
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-section p {
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: -200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 2rem;
+}
+.image-section div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.achievements {
+  background-color: #ff7f32;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  color: white;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+}
+
+.achievements h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 0 10px;
+}
+
+.achievements .achievement-item {
+  width: 30%;
+  margin: 20px 1%;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq {
+  margin: 0;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+}
+
+.faq h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-content {
+  display: none;
+  padding: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  .image-section p {
+    margin-bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .item3 {
+    display: none;
+  }
+  .grid-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 790px) {
+  .grid-container {
+    display: block;
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .image-section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-section {
+    max-width: 600px;
+  }
+  .achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faq-section {
+    max-width: 400px;
+  }
+  .grid-container {
+    display: block;
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+}

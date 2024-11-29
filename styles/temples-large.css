@@ -1,0 +1,19 @@
+@media screen and (min-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .menu-icon {
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,221 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  margin-right: 20px;
+  min-width: 280px;
+}
+
+.card.top-countries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-total-preco {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card .profile img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card .profile .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card .profile .role {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .status .tasks {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card .status .amount {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card .status .amount.positive {
+  color: #00ff00;
+}
+
+.card .status .amount.negative {
+  color: #ff0000;
+}
+
+.card .status .amount.neutral {
+  color: #00ffff;
+}
+
+.chart {
+  height: 400px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 2;
+}
+
+.chart canvas {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-color: black;
+}
+
+.segmentation,
+.satisfaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  height: 300px;
+  position: relative;
+  min-height: 135px;
+}
+
+.pieContainer {
+  height: 100px;
+  position: absolute;
+  right: 135px;
+}
+.pieBackground {
+  background-color: green;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -moz-box-shadow: -1px 1px 3px #000;
+  -webkit-box-shadow: -1px 1px 3px #000;
+  -o-box-shadow: -1px 1px 3px #000;
+  box-shadow: -1px 1px 3px #000;
+}
+.pie {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+.hold {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+#pieSlice1 .pie {
+  background-color: #1b458b;
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.satisfaction .percentage {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.top-countries ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-countries li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.top-countries li i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-right: 0;
+  }
+
+  .chart {
+    height: 300px;
+  }
+}
