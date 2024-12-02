@@ -31,7 +31,8 @@ header > div {
   padding: 20px;
   margin-bottom: 20px;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   min-width: 280px;
 }
 
@@ -48,10 +49,6 @@ header > div {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-}
-
-.card:last-child {
-  margin-right: 0;
 }
 
 .card h2 {
